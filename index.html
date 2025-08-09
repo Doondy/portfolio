@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sai Krishna Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  header {
+    background: #d90f81;
+    padding: 15px;
+    text-align: center;
+    color: rgb(22, 185, 245);
+  }
+  nav button i {
+  margin-right: 8px;
+  }
+  nav {
+    text-align: center;
+    margin: 10px 0;
+  }
+  nav button {
+    background: #079ec0;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  nav button:hover {
+    background: #1a5f8a;
+  }
+  section {
+    display: none; /* Hidden by default */
+    max-width: 900px;
+    margin: 20px auto;
+    background: rgb(248, 11, 161);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  section.active {
+    display: block; /* Only active section is shown */
+  }
+  footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #2c3e50;
+  color: white;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Doondy Sai Krishna Chandolu</h1>
+</header>
+
+<nav>
+  <button onclick="showSection('personal')"><i class="fas fa-user"></i> Personal Details</button>
+  <button onclick="showSection('education')"><i class="fas fa-graduation-cap"></i> Education</button>
+  <button onclick="showSection('skills')"><i class="fas fa-code"></i> Skills</button>
+  <button onclick="showSection('projects')"><i class="fas fa-project-diagram"></i> Projects</button>
+  <button onclick="showSection('contact')"><i class="fas fa-envelope"></i> Contact</button>
+</nav>
+
+
+<section id="personal" class="active">
+  <h2>Personal Details</h2>
+  <img src="Sai Krishna.jpg" alt="Sai Krishna" style="max-width:150px; border-radius:50%; display:block; margin:10px auto;">
+  <p><strong>Name: </strong> Chandolu Doondy Sai Krishna </p>
+  <p><strong>Email: </strong> doondysaikrishna@gmail.com </p>
+  <p><strong>Mobile: </strong> 9502261900 </p>
+  <p><strong>Place: </strong> Vijayawada,Andhra Pradesh </p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <p>PG: Amrita Viswa Vidya Peetham</p>
+  <p>2025 - 2027</p1>
+  <p>UG: KL University</p>
+  <p>2020 - 2024</p>
+  <p>CGPA: 8.62</p>
+  <p>School: Sri Chaitanya</p>
+  <p>2018 - 2020</p>
+  <p>CGPA: 8.5</p>
+  <p>S.T.B.E.M HIGH School</p>
+  <p>2017 - 2018</p>
+  <p>CGPA: 8.8</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Python</li>
+    <li>Java</li>
+    <li>HTML, CSS, JavaScript</li>
+    <li>SQL</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <p><strong>Health Care Management</strong> – React JS, MongoDB</p>
+  <p><strong>Weather-Forecast App</strong> – React.js, Node.js</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Full Name: </P>
+  <p>Email Address: </p>
+  <p>Mobile Number: </p>
+  <p>Your Message: </a></p>
+</section>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+
+<footer>
+  CopyRight © 2025  By  Chandolu Doondy Sai Krishna | All Rights Reserved
+</footer>
+
+</body>
+</html>
